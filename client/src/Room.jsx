@@ -9,7 +9,8 @@ const useStyles = makeStyles({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "100vh"
+    height: "100vh",
+    backgroundColor: "#263238"
   },
   paper: {
     width: "50em",
