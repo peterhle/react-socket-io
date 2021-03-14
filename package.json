@@ -1,0 +1,28 @@
+{
+  "name": "react-socket-io",
+  "version": "1.0.0",
+  "description": "react socket io chat app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterhle/react-socket-io.git"
+  },
+  "keywords": [
+    "react-socket-io"
+  ],
+  "author": "Peter le",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peterhle/react-socket-io/issues"
+  },
+  "homepage": "https://github.com/peterhle/react-socket-io#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "socket.io": "^4.0.0"
+  }
+}
