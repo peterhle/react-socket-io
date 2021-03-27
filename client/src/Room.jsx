@@ -43,7 +43,7 @@ const useStyles = makeStyles({
   message:{
     listStyle: "none"
   },
-  myMessage:{
+  owner:{
     margin: "1em",
     backgroundColor: "#0091EA",
     padding: "0.5em 1.5em",
@@ -54,7 +54,7 @@ const useStyles = makeStyles({
     width: "fit-content",
     marginRight: "auto"
   },
-  receivedMessage: {
+  guest: {
     margin: "1em",
     backgroundColor: "#8BC34A",
     padding: "0.5em 1.5em",
@@ -106,7 +106,7 @@ const Room = () => {
             {messages.map((message, i) => (
               <li
                 key={i}
-                className={clsx(classes.message, message.ownedByCurrentUser ? classes.myMessage : classes.receivedMessage)}
+                className={clsx(classes.message, message.isOwner ? classes.owner : classes.guest)}
               >
                 <span>{message.body}</span>
               </li>
